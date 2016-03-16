@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方法</title>
+    <script type="text/javascript">
+        function max(a, b){
+            return a>b?a:b;
+        }
+        console.log(max(2,3));
+        var func = max;
+        console.log(func(3,5));
+
+        function max1(){
+            console.log(arguments);
+        }
+        max1();
+        max1(1,2);
+        max1(1,2,"Hello");
+        function max2(){
+            var maxValue = arguments[0];
+            for (var i=1; i<arguments.length; i++){
+                maxValue = max(maxValue, arguments[i]);
+            }
+            return maxValue;
+        }
+        console.log(max2(1,10,300,40,-60));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
