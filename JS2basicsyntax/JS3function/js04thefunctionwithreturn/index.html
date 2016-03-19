@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+       /* function hello(){
+            alert(1);
+            return "hello";
+        }
+        var v = hello()+":grace";
+        var v2 = hello()+":lily";
+        alert(v);
+        alert(v2);*/
+
+        /*function compare(a,b){
+            if (a>b){
+                return alert("a is big");//不建议return语句直接alert
+            }else{
+                return alert("b is big");
+            }
+        }
+        compare();
+        compare(30,10);*/
+
+       </script>
+
+    <p id="pid"></p>
+    <script>
+       function compare2(a,b){
+           if (a>b){
+               return "a is big";
+           }else{
+               return "b is big";
+           }
+       }
+       var v = compare2(30,10);
+       document.getElementById("pid").innerHTML=v;
+    </script>
+</body>
+</html>

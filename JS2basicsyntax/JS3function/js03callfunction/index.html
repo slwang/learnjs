@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function sum(){
+            var a = 10;
+            var b = 20;
+            var s = a + b;
+            alert(s);
+        }
+        //sum();//在<script>标签中调用
+    </script>
+<form>
+    <input type="button" value=" 提交" onclick="sum()" >
+</form>
+    <!--或者不用表单，直接用button也可以-->
+    <button onclick="sum()">提交</button>
+</body>
+</html>

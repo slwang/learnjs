@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--局部变量和全局变量-->
+    <script>
+        var n =10;  m=10;//全局变量 任何地方都可以使用
+        function demo(){
+            var i =10; //局部变量 只能在当前函数中使用。 函数被使用的时候生效，函数不使用的时候变量自动销毁
+            x =10; //全局变量 任何地方都可以使用，但是一定要等demo被调用之后，x才有值
+        }
+        alert(m);
+        //alert(x); 如果没调用demo之前用x，则后面的都不会被执行。
+        demo();
+        alert(x);
+    </script>
+</body>
+</html>
